@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rahul Sharma | The Digital Architect</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&amp;family=Manrope:wght@200;300;400;600&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #08132a;
+        }
+        .text-glow-primary {
+            text-shadow: 0 0 15px rgba(56, 222, 187, 0.3);
+        }
+        .gradient-border-top {
+            position: relative;
+        }
+        .gradient-border-top::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, #38debb 0%, transparent 100%);
+            opacity: 0.2;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#1f2942",
+                      "on-primary": "#00382d",
+                      "tertiary-container": "#0a192f",
+                      "on-error": "#690005",
+                      "surface-tint": "#38debb",
+                      "secondary": "#b6c6ed",
+                      "secondary-fixed": "#d8e2ff",
+                      "on-surface-variant": "#c5c6cd",
+                      "tertiary": "#b9c7e4",
+                      "surface-container-low": "#101b33",
+                      "error-container": "#93000a",
+                      "on-background": "#d9e2ff",
+                      "primary": "#38debb",
+                      "on-secondary": "#20304f",
+                      "on-tertiary-container": "#74829d",
+                      "surface-container-highest": "#2a344d",
+                      "surface-container-lowest": "#030d25",
+                      "on-tertiary": "#233148",
+                      "outline": "#8f9097",
+                      "surface-dim": "#08132a",
+                      "surface-bright": "#2f3952",
+                      "surface-variant": "#2a344d",
+                      "error": "#ffb4ab",
+                      "surface": "#08132a",
+                      "inverse-on-surface": "#263049",
+                      "primary-fixed-dim": "#38debb",
+                      "on-primary-fixed": "#002019",
+                      "on-secondary-fixed-variant": "#374767",
+                      "inverse-surface": "#d9e2ff",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-container": "#a5b5db",
+                      "inverse-primary": "#006b58",
+                      "surface-container": "#151f37",
+                      "on-tertiary-fixed": "#0d1c32",
+                      "on-tertiary-fixed-variant": "#39475f",
+                      "on-primary-fixed-variant": "#005142",
+                      "secondary-fixed-dim": "#b6c6ed",
+                      "background": "#08132a",
+                      "primary-fixed": "#5ffbd6",
+                      "tertiary-fixed": "#d6e3ff",
+                      "on-secondary-fixed": "#091b39",
+                      "outline-variant": "#44474d",
+                      "on-surface": "#d9e2ff",
+                      "secondary-container": "#374767",
+                      "on-primary-container": "#009379",
+                      "tertiary-fixed-dim": "#b9c7e4",
+                      "primary-container": "#001e17"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Manrope"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          }
+        }
+    </script>
+</head>
+<body class="font-body text-on-surface selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl dark:bg-[#08132a]/60 no-line-rule tonal-shift-via-bg">
+<nav class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-slate-50 dark:text-[#f8fafc]">
+                RS<span class="text-primary">.</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-label tracking-wide uppercase text-xs font-semibold">
+<a class="text-emerald-400 border-b-2 border-emerald-400 pb-1 hover:text-emerald-300 transition-colors duration-300" href="#projects">Projects</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-emerald-300 transition-colors duration-300" href="#about">Experience</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-emerald-300 transition-colors duration-300" href="#skills">Expertise</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-emerald-300 transition-colors duration-300" href="#about">Process</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-emerald-300 transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-label text-[10px] tracking-widest uppercase font-bold py-2 px-6 rounded-lg hover:shadow-[0_0_15px_rgba(56,222,187,0.4)] transition-all">
+                Connect
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden px-6" id="hero">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[120px]"></div>
+</div>
+<div class="relative z-10 max-w-4xl w-full">
+<p class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-6">Hi, my name is</p>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface mb-4 leading-none">
+                    Rahul Sharma<span class="text-primary">.</span>
+</h1>
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-primary-fixed-dim opacity-90 mb-8">
+                    Building the future with code
+                </h2>
+<p class="font-body text-lg md:text-xl font-light text-on-surface-variant max-w-xl mb-12 leading-relaxed">
+                    Third-year CS student <span class="mx-2 opacity-30">|</span> Seeking Software Engineering Internships
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary font-label text-xs tracking-widest uppercase font-bold py-4 px-10 rounded-lg shadow-[0_0_20px_rgba(56,222,187,0.2)] hover:shadow-[0_0_30px_rgba(56,222,187,0.4)] transition-all transform hover:-translate-y-1">
+                        Download CV
+                    </button>
+<button class="border border-outline-variant text-on-surface font-label text-xs tracking-widest uppercase font-bold py-4 px-10 rounded-lg hover:bg-surface-container-high transition-all">
+                        View My Work
+                    </button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 px-6 bg-surface-container-low" id="about">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<p class="font-label text-primary text-xs uppercase tracking-[0.2em] mb-4">02. About Me</p>
+<h2 class="font-headline text-4xl font-bold mb-8 tracking-tight">The Digital Architect</h2>
+<div class="space-y-6 font-body text-on-surface-variant text-lg leading-relaxed font-light">
+<p>I am a Computer Science student at XYZ University with a strong foundation in software development. I enjoy building efficient, user-friendly applications and am actively looking for internship opportunities to contribute to real-world projects.</p>
+<p>My approach is rooted in the belief that code is a craft. Every system I design is built with scalability, performance, and the end-user experience in mind.</p>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<div class="relative group">
+<div class="absolute -inset-4 border border-primary/20 rounded-xl group-hover:-inset-6 transition-all duration-500"></div>
+<div class="relative w-64 h-80 bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
+<img alt="Rahul Sharma Profile" class="w-full h-full object-cover grayscale contrast-125 mix-blend-luminosity group-hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist studio portrait of a young Indian male software engineer in dark attire, soft cinematic side lighting, dark professional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn1yxfkuLIAnYXqtpfPofL1ZUtncda8owozl3eEG4FUkTJ9p9EcibrKqmsvKrxeHwgO-IDN63xAdSrARUPA3aNa5P0pOYFrclvaL2xYElV-v2hX5K7y_O81HYljaYLo-g4-ZIx70XWzZDUGd39ju_v07ZWrM1IJNRQ2QCXG5Qo7Y2gSs8e72Lpu7UomlzvgI8z2-bITi2-pZNqAQhy055E5lp1VyYC6icYBrAqBHZSgpHwE7QLZOpE7FGURa-50ue6kLuIyEKH4nY"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-32 px-6" id="skills">
+<div class="max-w-6xl mx-auto text-center mb-16">
+<p class="font-label text-primary text-xs uppercase tracking-[0.2em] mb-4">03. Expertise</p>
+<h2 class="font-headline text-4xl font-bold tracking-tight">Core Competencies</h2>
+</div>
+<div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6">
+<!-- Python -->
+<div class="group bg-surface-container-low p-8 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:bg-surface-container-high hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 opacity-80 group-hover:opacity-100 transition-opacity">terminal</span>
+<span class="font-label text-xs tracking-widest uppercase font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Python</span>
+</div>
+<!-- Java -->
+<div class="group bg-surface-container-low p-8 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:bg-surface-container-high hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 opacity-80 group-hover:opacity-100 transition-opacity">coffee</span>
+<span class="font-label text-xs tracking-widest uppercase font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Java</span>
+</div>
+<!-- MySQL -->
+<div class="group bg-surface-container-low p-8 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:bg-surface-container-high hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 opacity-80 group-hover:opacity-100 transition-opacity">database</span>
+<span class="font-label text-xs tracking-widest uppercase font-semibold text-on-surface-variant group-hover:text-primary transition-colors">MySQL</span>
+</div>
+<!-- React -->
+<div class="group bg-surface-container-low p-8 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:bg-surface-container-high hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 opacity-80 group-hover:opacity-100 transition-opacity">web</span>
+<span class="font-label text-xs tracking-widest uppercase font-semibold text-on-surface-variant group-hover:text-primary transition-colors">React</span>
+</div>
+<!-- Git -->
+<div class="group bg-surface-container-low p-8 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:bg-surface-container-high hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 opacity-80 group-hover:opacity-100 transition-opacity">account_tree</span>
+<span class="font-label text-xs tracking-widest uppercase font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Git</span>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-32 px-6 bg-surface-container-lowest" id="projects">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-end mb-20 gap-4">
+<div class="text-left">
+<p class="font-label text-primary text-xs uppercase tracking-[0.2em] mb-4">04. Projects</p>
+<h2 class="font-headline text-4xl font-bold tracking-tight">Recent Works</h2>
+</div>
+<div class="hidden md:block h-px bg-outline-variant flex-grow mx-10 mb-5 opacity-20"></div>
+</div>
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+<!-- Project 1 -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-500 hover:bg-surface-container-high hover:-translate-y-2">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-primary opacity-20 text-6xl group-hover:opacity-40 transition-opacity">terminal</span>
+</div>
+<div class="flex gap-4 mb-6">
+<span class="font-label text-[10px] tracking-widest uppercase bg-primary/10 text-primary px-3 py-1 rounded">Java</span>
+<span class="font-label text-[10px] tracking-widest uppercase bg-primary/10 text-primary px-3 py-1 rounded">MySQL</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors">Student Result Management System</h3>
+<p class="font-body text-on-surface-variant font-light mb-10 leading-relaxed">A comprehensive backend application using Swing for GUI and MySQL for robust data persistence. Engineered for academic scalability and efficient database querying.</p>
+<a class="inline-flex items-center gap-2 font-label text-xs tracking-widest uppercase font-bold text-primary hover:gap-4 transition-all" href="#">
+                        View Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Project 2 -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-500 hover:bg-surface-container-high hover:-translate-y-2">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-primary opacity-20 text-6xl group-hover:opacity-40 transition-opacity">monitoring</span>
+</div>
+<div class="flex gap-4 mb-6">
+<span class="font-label text-[10px] tracking-widest uppercase bg-primary/10 text-primary px-3 py-1 rounded">React</span>
+<span class="font-label text-[10px] tracking-widest uppercase bg-primary/10 text-primary px-3 py-1 rounded">Chart.js</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors">Personal Finance Tracker</h3>
+<p class="font-body text-on-surface-variant font-light mb-10 leading-relaxed">Interactive dashboard providing real-time data visualization of expenses. Built with a focus on atomic component design and high-performance rendering.</p>
+<a class="inline-flex items-center gap-2 font-label text-xs tracking-widest uppercase font-bold text-primary hover:gap-4 transition-all" href="#">
+                        View Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-6" id="contact">
+<div class="max-w-3xl mx-auto text-center">
+<p class="font-label text-primary text-xs uppercase tracking-[0.2em] mb-4">05. Contact</p>
+<h2 class="font-headline text-5xl font-extrabold tracking-tighter mb-8 text-on-surface">Get In Touch</h2>
+<p class="font-body text-on-surface-variant text-lg font-light mb-12 leading-relaxed">
+                    I am currently open to internship opportunities. Whether you have a question or just want to say hi, feel free to reach out. I'll get back to you as soon as I can.
+                </p>
+<a class="inline-block bg-transparent border-2 border-primary text-primary font-label text-sm tracking-[0.2em] uppercase font-bold py-5 px-12 rounded-lg hover:bg-primary/10 transition-all mb-16" href="mailto:rahul@email.com">
+                    Connect via Email
+                </a>
+<div class="flex justify-center gap-8">
+<a class="group flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">code</span>
+<span class="font-label text-xs tracking-widest uppercase font-semibold">GitHub</span>
+</a>
+<a class="group flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">person_search</span>
+<span class="font-label text-xs tracking-widest uppercase font-semibold">LinkedIn</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-12 bg-[#08132a] border-t border-emerald-500/10 flex flex-col items-center justify-center gap-4">
+<div class="flex gap-8 mb-4">
+<a class="font-label text-[10px] tracking-widest uppercase text-slate-600 hover:text-emerald-300 transition-colors" href="#">GitHub</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-slate-600 hover:text-emerald-300 transition-colors" href="#">LinkedIn</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-slate-600 hover:text-emerald-300 transition-colors" href="#">Documentation</a>
+</div>
+<p class="font-label text-[10px] tracking-widest uppercase text-slate-600">
+            © 2024 Built with Disciplined Craft
+        </p>
+</footer>
+<!-- Mobile Navigation (Shell Visibility Logic) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#101b33]/80 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex justify-between items-center">
+<a class="flex flex-col items-center gap-1 text-emerald-400" href="#hero">
+<span class="material-symbols-outlined text-xl">home</span>
+<span class="text-[8px] font-label uppercase tracking-widest font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#projects">
+<span class="material-symbols-outlined text-xl">architecture</span>
+<span class="text-[8px] font-label uppercase tracking-widest">Works</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#about">
+<span class="material-symbols-outlined text-xl">history</span>
+<span class="text-[8px] font-label uppercase tracking-widest">About</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#skills">
+<span class="material-symbols-outlined text-xl">terminal</span>
+<span class="text-[8px] font-label uppercase tracking-widest">Skills</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#contact">
+<span class="material-symbols-outlined text-xl">mail</span>
+<span class="text-[8px] font-label uppercase tracking-widest">Reach</span>
+</a>
+</nav>
+</body></html>
